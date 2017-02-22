@@ -7,7 +7,7 @@ template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape = True)
 
 class BlogHandler(webapp2.RequestHandler):
-    """ Utility class for gathering various useful methods that are used by most request handlers """
+    """ Utility class for gathering various useful methods that are used by most request handlers! """
 
     def get_posts(self, limit, offset):
         """ Get all posts ordered by creation date (descending) """
